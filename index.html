@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lottie Animation - Local</title>
+
+    <!-- Load local Lottie JS -->
+    <script src="./js/lottie.min.js"></script>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .lottie-container {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Lottie animation containers -->
+    <div id="lottie-animation-1" class="lottie-container"></div>
+    <div id="lottie-animation-2" class="lottie-container"></div>
+    <div id="lottie-animation-3" class="lottie-container"></div>
+    <div id="lottie-animation-4" class="lottie-container"></div>
+
+
+    <script>
+        // Load first Lottie animation from local JSON
+        var animation1 = lottie.loadAnimation({
+            container: document.getElementById("lottie-animation-1"),
+            renderer: "svg",
+            loop: true,
+            autoplay: true,
+            path: "./animations/lot__1.json" // Local path
+        });
+
+        // Load second Lottie animation from local JSON
+        var animation2 = lottie.loadAnimation({
+            container: document.getElementById("lottie-animation-2"),
+            renderer: "svg",
+            loop: true,
+            autoplay: true,
+            path: "./animations/lot__3.json" // Local path
+        });
+
+        // Load second Lottie animation from local JSON
+        var animation3 = lottie.loadAnimation({
+            container: document.getElementById("lottie-animation-3"),
+            renderer: "svg",
+            loop: true,
+            autoplay: true,
+            path: "./animations/lot__17.json" // Local path
+        });
+
+        var animation4 = lottie.loadAnimation({
+            container: document.getElementById("lottie-animation-4"),
+            renderer: "svg",
+            loop: true,
+            autoplay: true,
+            path: "./animations/lot__4.json" // Local path
+        });
+    </script>
+
+</body>
+</html>
